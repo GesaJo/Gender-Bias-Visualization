@@ -1,4 +1,4 @@
-"""function to finsih sentences with GPT2-Model and function
+"""function to finish sentences with GPT2-Model and function
     to capitalize appropriate words in output-sentence"""
 
 import torch

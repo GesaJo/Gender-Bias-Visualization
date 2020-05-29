@@ -130,6 +130,6 @@ dmypy.json
 .pyre/
 
 app/glove_dict.p
-app/data
-app/__pycache__
+app/data/
+app/__pycache__/
 

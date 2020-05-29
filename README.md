@@ -71,13 +71,15 @@ Chang, S./ McKeown, K.: Automatically Inferring Gender Associations from Languag
 This project has been developed as final project @Spiced Bootcamp.
 
 ## How to use it
-<!-- This website is not optimzed for small screens, so it looks best on a laptop
-(or bigger) screen. -->
-[...]
+- clone this repo
+- 
+(This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.)
+
+
 
 ## To Do:
 - add more documentation
-- new feature: bias in whole dataset and most biased words
-- tests
 - dockerize
 - host
+- tests
+- new feature: bias in whole dataset and most biased words
