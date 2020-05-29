@@ -1,0 +1,43 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="column_left">
+    <div class="centerpiece">
+    <form action='/sentence' method='get' style="text-align:center"><br><br>
+      <h2>Please enter some text to visualize biases:</h2>
+      <input type="text" class="textbox" name="sentence"><br><br>
+      <input type="submit" value="Visualize" class="btn btn-outline-secondary">
+    </form>
+    </div>
+
+    <br><br><br><br>
+
+  <div class="explanation">
+    Enter a sentence and if there are words in it that have specific gender
+    associations, those will be made visible through colour.
+    Different shades of blue (female) oder red (male) show the bias in
+    how the words are used.<br><br>
+    Model: word2vec, trained on 100 billion words from GoogleNews.
+  </div><br><br>
+</div>
+
+<div class="column_right">
+  <div class="examples"> How it works:
+    <li>Use a full sentence or a single word</li>
+    <li>Adjectives, nouns and verbs get checked for bias</li>
+    <li>Max. 20 words</li>
+    <li>Blue: female</li>
+    <li>Red: male</li><br>
+    Examples:
+    <li>The surgeon was a great parent and walked around with his toddler
+      in a stroller</li>
+    <li>The unmarried therapist made a fortune with podcasts and soap</li>
+    <li>The retired architect likes champagne and cheesecake with strawberries</li>
+
+
+  </div>
+</div>
+</div>
+<br><br><br><br>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="column_left">
+    <div class="centerpiece">
+      <form method='get' style="text-align:center"><br><br>
+        <h2>Please enter some text you'd like to have swapped:</h2>
+        <textarea class="textbox" name="sentence" rows="7" cols="50"></textarea><br><br>
+        <input type="submit" value="Change it" class="btn btn-outline-secondary">
+      </form>
+    </div><br><br>
+
+    <div class="output">
+      <p><span style="color:#4b87a8;font-weight:bold;">Your input:</span> {{sentence[0]}}</p><br>
+      <p><span style="color:#4b87a8;font-weight:bold;">The changed sentence:</span> {{ready}}</p><br>
+    </div><br><br>
+    <div class="output">
+      <p><span style="color:#4b87a8;font-weight:bold;">With non-binary pronouns:</span> {{ready_they}}</p>
+    </div>
+    <br><br><br>
+    <div class="explanation">
+      This tool takes advantage of a very simple approach
+      to expose stereotypes: If you wouldn't write or say the sentence in
+      the same way for the other binary gender, it is likely to include stereotypes.
+      The exceptions are of course inherently gendered words.
+      This tool shows bias on the level of sentences and paragraphs, not on
+      word-level.<br>
+      Also, if you don't want to choose pronouns that reflect a non-binary gender,
+      one option is to use "they" as a neutral pronoun. Your input is also
+      returned in this way to represent this alternative.<br><br>
+      Model: GloVe trained on Common Crawl (42 billion tokens).
+    </div>
+  </div>
+
+
+  <div class="column_right">
+    <div class="examples"> How it works well:
+      <li>Use one or more sentences</li>
+      <li>Use pronouns</li>
+      <li>For "they": Only the pronouns of the first/main subject get changed</li><br>
+      Example:
+      <li>Throughout her campaign for presidency she portrayed herself as a polished yet approachable grandmother figure noted for her big smile and perfectly coiffed bouffant rarely stepping out with a hair out of place.
+        And so when she appeared with a  noticeably untamed head of hair it came as quite a shock.</li>
+    </div>
+  </div>
+</div>
+<div class="vertical-center">
+<a href="/pronouns_start"><button class="button">Restart</button></a>
+</div>
+<br><br><br><br>
+{% endblock %}

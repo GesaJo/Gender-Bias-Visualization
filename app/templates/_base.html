@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gender Bias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+    li {list-style-type: disc;};
+    body {
+          width:80%;
+          margin-left:auto;
+          margin-right:auto;}
+    </style>
+  </head>
+
+  <body>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="/" style="color:#2f8384" ><img src="/static/images/logo.png" alt="logo" style="width:225px; margin-top:-60px;">&nbsp;&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/" style="color:#2f8384" >Start</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sentence_start" style="color:#2f8384">Sentence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/thesaurus_start" style="color:#2f8384">Thesaurus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pronouns_start" style="color:#2f8384">Pronouns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/next_start" style="color:#2f8384">Word prediction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cloud_start" style="color:#2f8384">Wordcloud</a>
+          </li>
+        </ul>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+    </script>
+  </body>
+</html>

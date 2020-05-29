@@ -1,0 +1,46 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="column_left">
+    <div class="centerpiece">
+      <form action='/cloud' method='get' style="text-align:center"><br><br>
+        <h2>Enter a seed-word to create a cloud:</h2>
+        <input type="text" class="textbox" name="sentence"><br><br>
+        <input type="submit" value="make a cloud" class="btn btn-outline-secondary">
+      </form>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="explanation">
+      This tool firstly creates a wordcloud of the words surrounding
+      the seed-word in vector-space. Then, you'll get two more clouds:
+      One that you get when you move in the gender-direction "female" and
+      one in the direction "male".
+      You can see that the cloud changes in sometimes insightful ways: for example
+      the "male"-cloud for "cooking" has words like "brew", "bottled", "potato" and "invented"
+      while the "female"-cloud shows "laundry", "gardening", "cleaning" and words related to
+      sweet treats.<br><br>
+      PS: Often, the dots seem to be distributed very evenly - that is due to
+      the necessary dimensionality reduction of the vectors. In general, plots created this way
+      are tricky to interpret and are used here mainly for visualization
+      purposes.<br><br>
+      Model: GloVe trained on Common Crawl (42 billion tokens).
+    </div><br><br>
+    </div>
+
+    <div class="column_right">
+    <div class="examples"> How it works:
+    <li>Use a noun, adjective or descriptive verb</li>
+    <li>You can zoom into the clouds and move them</li><br>
+    Examples:
+    <li>cooking</li>
+    <li>genius</li>
+    <li>money</li>
+    <li>smart</li>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+
+{% extends "_base.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="column_left">
+    <div class="centerpiece">
+      <form method='get' style="text-align:center"><br><br>
+      <h2>Give me more words like:</h2>
+      <input type="text" class="textbox" name="sentence"><br><br>
+      <input type="submit" value="Get synonyms" class="btn btn-outline-secondary">
+      </form>
+    </div>
+    <br><br>
+
+    <div class="output">
+      <h2>Synonyms for "{{orig_word}}":</h2>
+      <span style="color:{{cols[0]}}">{{th_words[0] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[1]}}">{{th_words[1] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[2]}}">{{th_words[2] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[3]}}">{{th_words[3] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[4]}}">{{th_words[4] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[5]}}">{{th_words[5] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[6]}}">{{th_words[6] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[7]}}">{{th_words[7] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[8]}}">{{th_words[8] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[9]}}">{{th_words[9] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[10]}}">{{th_words[10] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[11]}}">{{th_words[11] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[12]}}">{{th_words[12] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[13]}}">{{th_words[13] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[14]}}">{{th_words[14] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[15]}}">{{th_words[15] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[16]}}">{{th_words[16] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[17]}}">{{th_words[17] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[18]}}">{{th_words[18] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style="color:{{cols[19]}}">{{th_words[19] }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <br><br><br>
+
+    <div class="explanation">
+      This tool returns synonyms for the given words. Those synonyms are coloured
+      if they are usually used in a male (red) or female (blue) context, the
+      more biased they are, the lighter the colour.<br>
+      It becomes apparent that its not only unique words that
+      are used in certain gendered contexts, but sometimes whole
+      "concepts", for example all but one word returned for "genius" are
+      either neutral or closer to man than to woman.<br>
+      Also, the male-as-norm prinicple becomes apparent here: For example
+      the synonyms for "man" include "humanity" and "human being", the ones
+      for women don't. Likewise, the synonyms for "person" are all neutral or
+      male biased.<br><br>
+      Model: Wordnet (nltk).
+    </div>
+  </div>
+
+<div class="column_right">
+  <div class="examples"> How it works:
+    <li>Use one word</li>
+    <li>Terms with more than one word can't be processed in the model that
+    detects the bias, so they'll always appear neutral</li>
+    <li>Red: male</li>
+    <li>Blue: female</li><br>
+    Examples:
+    <li>genius</li>
+    <li>person</li>
+    <li>lovely</li>
+    <li>strong</li>
+    <li>boss</li>
+    <li>designer</li>
+
+  </div>
+</div>
+</div>
+<div class="vertical-center">
+<a href="/thesaurus_start"><button class="button">Restart</button></a>
+</div>
+<br><br><br><br>
+
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="column_left">
+    <div class="centerpiece">
+      <form method='get' style="text-align:center"><br><br>
+        <h2>Please enter some text to visualize biases:</h2>
+        <input type="text" class="textbox" name="sentence"><br><br>
+        <input type="submit" value="Visualize" class="btn btn-outline-secondary">
+      </form>
+    </div>
+    <br><br>
+
+    <div class="output"><p>
+      <span style="color:{{colors[0]}}">{{sen[0]}}&nbsp;</span>
+      <span style="color:{{colors[1]}}">{{sen[1]}}&nbsp;</span>
+      <span style="color:{{colors[2]}}">{{sen[2]}}&nbsp;</span>
+      <span style="color:{{colors[3]}}">{{sen[3]}}&nbsp;</span>
+      <span style="color:{{colors[4]}}">{{sen[4]}}&nbsp;</span>
+      <span style="color:{{colors[5]}}">{{sen[5]}}&nbsp;</span>
+      <span style="color:{{colors[6]}}">{{sen[6]}}&nbsp;</span>
+      <span style="color:{{colors[7]}}">{{sen[7]}}&nbsp;</span>
+      <span style="color:{{colors[8]}}">{{sen[8]}}&nbsp;</span>
+      <span style="color:{{colors[9]}}">{{sen[9]}}&nbsp;</span>
+      <span style="color:{{colors[10]}}">{{sen[10]}}&nbsp;</span>
+      <span style="color:{{colors[11]}}">{{sen[11]}}&nbsp;</span>
+      <span style="color:{{colors[12]}}">{{sen[12]}}&nbsp;</span>
+      <span style="color:{{colors[13]}}">{{sen[13]}}&nbsp;</span>
+      <span style="color:{{colors[14]}}">{{sen[14]}}&nbsp;</span>
+      <span style="color:{{colors[15]}}">{{sen[15]}}&nbsp;</span>
+      <span style="color:{{colors[16]}}">{{sen[16]}}&nbsp;</span>
+      <span style="color:{{colors[17]}}">{{sen[17]}}&nbsp;</span>
+      <span style="color:{{colors[18]}}">{{sen[18]}}&nbsp;</span>
+      <span style="color:{{colors[19]}}">{{sen[19]}}&nbsp;</span></p>
+    </div>
+    <br><br><br>
+    <div class="explanation">
+      Enter a sentence and if there are words in it that have specific gender
+      associations, those will be made visible through colour.
+      Different shades of blue (female) oder red (male) show the bias in
+      how the words are used.<br><br>
+      Model: word2vec, trained on 100 billion words from GoogleNews.
+    </div>
+  </div>
+
+  <div class="column_right">
+    <div class="examples"> How it works:
+      <li>Use a full sentence or a single word</li>
+      <li>Adjectives, nouns and verbs get checked for bias</li>
+      <li>Max. 20 words</li>
+      <li>Blue: female</li>
+      <li>Red: male</li>
+      (the lighter the more biased)<br><br>
+      Examples:
+      <li>The surgeon was a great parent and walked around with his toddler
+        in a stroller</li>
+      <li>The unmarried therapist made a fortune with podcasts and soap</li>
+      <li>The retired architect likes champagne and cheesecake with strawberries</li>
+    </div>
+  </div>
+  </div>
+
+  <div class="vertical-center">
+  <a href="/sentence_start"><button class="button">Restart</button></a>
+  </div>
+  <br><br><br><br>
+{% endblock %}

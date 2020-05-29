@@ -1,0 +1,50 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="column_left">
+    <div class="centerpiece">
+      <form action='/next' method='get' style="text-align:center"><br><br>
+        <h2>Enter seed-words for predicting how the sentence goes on:</h2><br><br>
+        <input type="text" class="textbox" name="sentence"><br><br>
+        <input type="submit" value="Predict" class="btn btn-outline-secondary">
+      </form>
+    </div>
+
+    <br><br>
+
+  <div class="explanation">
+    Enter a couple of words to start a sentence and the
+    model will finish the sentence for you.
+    If the sentence has a subject that is male or female,
+    you will also get the finished sentence for the other binary gender
+    to compare word-choices and topics. Even if sometimes the model doesn't make a lot of sense, it is
+    interesting to see which words are chosen in the female and the male version
+    of the sentence.<br>
+    If there is no gendered subject, you'll get another
+    possible ending for the sentence. I becomes apparent that some phrases are
+    strongly connected to a gender, for example "the great person was" is always
+    finished (at least in a sample of 20 runs) with a neutral or a male object.
+    <br><br>
+    As there is a little randomness to escape loops, it can be useful to run the
+    same words a couple of times.<br><br>
+    Model: GPT2, trained on 8 million webpages.
+  </div><br><br>
+</div>
+
+<div class="column_right">
+  <div class="examples"> How it works:
+    <li>Use min. 3 words</li>
+    <li>results for capitalized words are different than lowercase</li>
+    <br>
+    Examples:
+    <li>Men are</li>
+    <li>Girls should</li>
+    <li>he looked like</li>
+    <li>she had a nice</li>
+  </div>
+</div>
+</div>
+<br><br><br><br>
+
+{% endblock %}
