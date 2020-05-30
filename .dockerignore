@@ -1,4 +1,3 @@
 .git
 .gitignore
-app/create_GloVe_dict
 app/data

@@ -1,12 +1,11 @@
-<img style="float:right;" src="./static/images/logo.png">
+<img style="float:right;" src="app/static/images/logo.png">
 
 ## Project to visualize gender-bias in language models
 
+<!--
+link: -->
 
-link:
-
-(This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.)
-
+<!-- (This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.) -->
 
 As has been known for some time, many machine learning models reproduce, and
 sometimes amplify, human biases regarding race, gender, age etc.
@@ -45,6 +44,7 @@ All of these Tools are explained in more detail on their respective sites.
 Models and tech used (among others):
 Word2Vec, GloVe, WordNet, GPT2, python, spacy, scipy, pytorch, bokeh, sklearn, HTML, CSS, jinja.
 
+
 ## Background: Gender-vector
 Words are represented by high-dimensional vectors (word embeddings) that
 capture their meaning and usage. The basic assumptions underlying the analysis
@@ -77,15 +77,22 @@ Chang, S./ McKeown, K.: Automatically Inferring Gender Associations from Languag
 
 This project has been developed as final project @Spiced Bootcamp.
 
-<!-- ## To use locally:
-- clone this repo -->
+## To use locally:
+- get data and store in directory app/data:
+  - download from github: gendered_words.txt
+  - download GoogleNews-vectors-negative300.bin.gz from https://code.google.com/archive/p/word2vec/
+  - download glove.6B.zip at https://nlp.stanford.edu/projects/glove/ and unzip.
 
 
+- create gloVe-dictionary: download file make_dictionary.py into app/ and run with: `python make_dictionary.py` (You need pickle and numpy to run the file). The dictionary should appear in app/data.
 
+- download run_server.sh t app/, cd into app and run: `source run_server.sh`
+
+- open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although it might take a minute.)
 
 ## To Do:
-- add more documentation
-- dockerize
+-  ~~add more documentation~~
+- ~~dockerize~~
 - host
 - tests
 - new feature: bias in whole dataset and most biased words
