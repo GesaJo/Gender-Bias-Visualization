@@ -57,6 +57,30 @@ inherently gendered word-pairs like "man" - "woman", "he" - "she", "son" -
 This gender-vector is then used to calculate a score (the dotproduct of a given
 word and the gender-vector) to indicate if there is a bias and how strong it is.
 
+
+This project has been developed as final project @Spiced Bootcamp.
+
+## To use locally:
+- get data and store in directory app/data:
+  - download from this repo: gendered_words.txt
+  - download GoogleNews-vectors-negative300.bin.gz from https://code.google.com/archive/p/word2vec/
+  - download glove.6B.zip at https://nlp.stanford.edu/projects/glove/ and unzip.
+
+
+- to create the gloVe-dictionary: download file app/make_dictionary.py  from this repo, save in localfolder: app/ and run with: `python make_dictionary.py` (You need pickle and numpy to run the file). The dictionary should appear in app/data.
+
+- download run_server.sh to app/, cd into app/ and run: `source run_server.sh`
+
+- open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although it might take a minute.)
+
+## To Do:
+-  ~~add more documentation~~
+- ~~dockerize~~
+- host
+- tests
+- new feature: bias in whole dataset and most biased words
+
+
 ## Sources and further reading:
 
 Bolukbasi, T./ Chang, K.-W. / Zou, J./ Saligrama, V./ Kalai, A.: Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings (2016).
@@ -74,25 +98,3 @@ Bordia, S./ Bowman, S.R.: Identifying and Reducing Gender Bias in Word-Level Lan
 Hoyle, A./ Wolf-Sonkin, L./ Wallach, H. / Augenstein, I. / Cotterell, R.: Unsupervised Discovery of Gendered Language through Latent-Variable Modeling (2019).
 
 Chang, S./ McKeown, K.: Automatically Inferring Gender Associations from Language (2019).
-
-This project has been developed as final project @Spiced Bootcamp.
-
-## To use locally:
-- get data and store in directory app/data:
-  - download from github: gendered_words.txt
-  - download GoogleNews-vectors-negative300.bin.gz from https://code.google.com/archive/p/word2vec/
-  - download glove.6B.zip at https://nlp.stanford.edu/projects/glove/ and unzip.
-
-
-- create gloVe-dictionary: download file make_dictionary.py into app/ and run with: `python make_dictionary.py` (You need pickle and numpy to run the file). The dictionary should appear in app/data.
-
-- download run_server.sh t app/, cd into app and run: `source run_server.sh`
-
-- open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although it might take a minute.)
-
-## To Do:
--  ~~add more documentation~~
-- ~~dockerize~~
-- host
-- tests
-- new feature: bias in whole dataset and most biased words
