@@ -133,5 +133,4 @@ app/data/glove.6B.50d.txt
 app/data/glove_dict.p
 app/data/GoogleNews-vectors-negative300.bin
 app/__pycache__/
-
-
+.dockerignore

@@ -73,7 +73,7 @@ This project has been developed as final project @Spiced Bootcamp.
 - run:
 `docker logs -f gb-container`
 - wait a little while....
-- open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although the initial load could also take some time...)
+- open the specified address (should be: localhost:5000) in your browser and the website should appear (although the initial load could also take some time...)
 
 ## To use locally without docker:
 - clone this repo
@@ -85,7 +85,7 @@ This project has been developed as final project @Spiced Bootcamp.
 - download WordNet with `python -m nltk.downloader punkt averaged_perceptron_tagger wordnet`
 - cd into app-folder and run `python application.py`
 - wait a little while....
-- open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although the initial load could also take some time...)
+- open the specified address (should be: localhost:5000) in your browser and the website should appear (although the initial load could also take some time...)
 
 ## To Do:
 -  ~~add more documentation~~
