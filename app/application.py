@@ -136,3 +136,6 @@ def clouds():
                            divtag_m=divtag_m,
                            only_f=only_f,
                            only_m=only_m)
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0")
