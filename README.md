@@ -45,6 +45,9 @@ Models and tech used (among others):
 Word2Vec, GloVe, WordNet, GPT2, python, spacy, scipy, pytorch, bokeh, sklearn, HTML, CSS, jinja.
 
 
+<img src="overview.gif" width="1000"/>
+
+
 ## Background: Gender-vector
 Words are represented by high-dimensional vectors (word embeddings) that
 capture their meaning and usage. The basic assumptions underlying the analysis
@@ -67,11 +70,13 @@ This project has been developed as final project @Spiced Bootcamp.
   - download glove.6B.zip at https://nlp.stanford.edu/projects/glove/ and unzip.
 
 
-- to create the gloVe-dictionary: download file app/make_dictionary.py  from this repo, save in localfolder: app/ and run with: `python make_dictionary.py` (You need pickle and numpy to run the file). The dictionary should appear in app/data.
+- to create the gloVe-dictionary: download file app/make_dictionary.py  from this repo, save in localfolder: app/ and run with: `python make_dictionary_GloVe.py` (You need pickle and numpy to run the file). The dictionary should appear in app/data.
 
-- download run_server.sh to app/, cd into app/ and run: `source run_server.sh`
+- download run_server.sh from this repo (in folder app), save in local folder app, cd into it and run: `source run_server.sh`
 
-- open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although it might take a minute.)
+- wait a little bit until you see a message something like this:
+
+- open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although the initial load could also take some time...)
 
 ## To Do:
 -  ~~add more documentation~~
@@ -83,18 +88,11 @@ This project has been developed as final project @Spiced Bootcamp.
 
 ## Sources and further reading:
 
-Bolukbasi, T./ Chang, K.-W. / Zou, J./ Saligrama, V./ Kalai, A.: Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings (2016).
-
-Caliskan-Islam, A./ Bryon, J.J./ Narayanan, A.: Semantics derived automatically from language corpora necessarily contain human biases (2017).
-
-Garg, N./ Schiebinger, L. / Jurafsky, D. / Zou, James: Word embeddings quantify 100 years of gender and ethnic stereotypes  (2018).
-
-Zhao, J./ Zhou, Y./ Li, Z. / Wang, W./ Chang, K.W.: Learning Gender-neutral Word Embeddings (2018).
-
-Gonen, H./  Goldberg, Y.: Lipstick on a Pig: Debiasing Methods Cover up Systematic Gender Biases in Word Embeddings But do not Remove Them (2019).
-
-Bordia, S./ Bowman, S.R.: Identifying and Reducing Gender Bias in Word-Level Language Models (2019).
-
-Hoyle, A./ Wolf-Sonkin, L./ Wallach, H. / Augenstein, I. / Cotterell, R.: Unsupervised Discovery of Gendered Language through Latent-Variable Modeling (2019).
-
-Chang, S./ McKeown, K.: Automatically Inferring Gender Associations from Language (2019).
+* Bolukbasi, T./ Chang, K.-W. / Zou, J./ Saligrama, V./ Kalai, A.: Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings (2016).  
+* Bordia, S./ Bowman, S.R.: Identifying and Reducing Gender Bias in Word-Level Language Models (2019).
+* Caliskan-Islam, A./ Bryon, J.J./ Narayanan, A.: Semantics derived automatically from language corpora necessarily contain human biases (2017).
+* Chang, S./ McKeown, K.: Automatically Inferring Gender Associations from Language (2019).
+* Garg, N./ Schiebinger, L. / Jurafsky, D. / Zou, James: Word embeddings quantify 100 years of gender and ethnic stereotypes  (2018).   
+* Gonen, H./  Goldberg, Y.: Lipstick on a Pig: Debiasing Methods Cover up Systematic Gender Biases in Word Embeddings But do not Remove Them (2019).   
+* Hoyle, A./ Wolf-Sonkin, L./ Wallach, H. / Augenstein, I. / Cotterell, R.: Unsupervised Discovery of Gendered Language through Latent-Variable Modeling (2019).  
+* Zhao, J./ Zhou, Y./ Li, Z. / Wang, W./ Chang, K.W.: Learning Gender-neutral Word Embeddings (2018).
