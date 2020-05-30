@@ -10,7 +10,6 @@ from model_with_past import next_word, capitalize_sentence
 from bokeh_plots import bokeh_magic
 from prepare_cloud import do_it_all, go_direction, cloud_comparison
 from thesaurus import get_synonyms
-from make_dictionary_GloVe import create_dict
 
 # load models
 model_spacy = spacy.load('en_core_web_md')
@@ -19,7 +18,6 @@ lemmatizer = WordNetLemmatizer()
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 model = GPT2LMHeadModel.from_pretrained('gpt2')
 model.eval()
-create_dict()
 
 from in_sentence import colours_bias, get_bias, get_colours, lengthen
 

@@ -7,9 +7,13 @@ from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 
 
-with open('data/glove_dict.p', "rb") as file_imp:
-    embeddings_dict = pickle.load(file_imp)
-
+embeddings_dict = {}
+with open("data/glove.6B.50d.txt", 'r', encoding="utf-8") as file_imp:
+    for line in file_imp:
+        values = line.split()
+        word = values[0]
+        vector = np.asarray(values[1:], "float32")
+        embeddings_dict[word] = vector
 
 def get_gender_vector():
     """calculate a general gender-vector"""
