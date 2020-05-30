@@ -7,7 +7,7 @@ from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 
 
-with open('glove_dict.p', "rb") as file_imp:
+with open('data/glove_dict.p', "rb") as file_imp:
     embeddings_dict = pickle.load(file_imp)
 
 

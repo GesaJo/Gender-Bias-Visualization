@@ -1,4 +1,4 @@
-app/glove_dict.p
 .git
 .gitignore
+app/create_GloVe_dict
 app/data

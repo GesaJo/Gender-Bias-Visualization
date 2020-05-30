@@ -132,4 +132,5 @@ dmypy.json
 app/glove_dict.p
 app/data/
 app/__pycache__/
+app/create_GloVe_dict/
 

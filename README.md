@@ -1,6 +1,13 @@
 <img style="float:right;" src="./static/images/logo.png">
 
 ## Project to visualize gender-bias in language models
+
+
+link:
+
+(This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.)
+
+
 As has been known for some time, many machine learning models reproduce, and
 sometimes amplify, human biases regarding race, gender, age etc.
 However, it is usually not the model in its design that is biased. The problem is
@@ -70,10 +77,9 @@ Chang, S./ McKeown, K.: Automatically Inferring Gender Associations from Languag
 
 This project has been developed as final project @Spiced Bootcamp.
 
-## How to use it
-- clone this repo
-- 
-(This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.)
+<!-- ## To use locally:
+- clone this repo -->
+
 
 
 

@@ -4,13 +4,14 @@ import numpy as np
 import gensim
 from sklearn.decomposition import PCA
 from nltk import pos_tag, word_tokenize
-from nltk.stem import WordNetLemmatizer
+# from nltk.stem import WordNetLemmatizer
+# from application import lemmatizer
 
 model_w2v = (
     gensim.models.KeyedVectors.load_word2vec_format
     ('data/GoogleNews-vectors-negative300.bin',
      binary=True))
-lemmatizer = WordNetLemmatizer()
+# lemmatizer = WordNetLemmatizer()
 
 gender_pairs = [['woman', 'man'], ['girl', 'boy'], ['she', 'he'],
                 ['mother', 'father'], ['daughter', 'son'], ['gal', 'guy'],
