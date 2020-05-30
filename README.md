@@ -63,19 +63,28 @@ word and the gender-vector) to indicate if there is a bias and how strong it is.
 
 This project has been developed as final project @Spiced Bootcamp.
 
-## To use locally:
+## To use locally with docker:
+- clone this repo
 - get data and store in directory app/data:
-  - download from this repo: gendered_words.txt
-  - download GoogleNews-vectors-negative300.bin.gz from https://code.google.com/archive/p/word2vec/
-  - download glove.6B.zip at https://nlp.stanford.edu/projects/glove/ and unzip.
+  - download GoogleNews-vectors-negative300.bin.gz from [here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing) and gunzip.
+  - download glove.6B.zip [here](http://nlp.stanford.edu/data/glove.6B.zip) and unzip.
+-  cd into folder app and run:  
+`docker run --rm -d -p 5000:5000 -v "$PWD/data:/app/data" --name gb-container gesajo/genderbias`
+- run:
+`docker logs -f gb-container`
+- wait a little while....
+- open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although the initial load could also take some time...)
 
-
-- to create the gloVe-dictionary: download file app/make_dictionary.py  from this repo, save in localfolder: app/ and run with: `python make_dictionary_GloVe.py` (You need pickle and numpy to run the file). The dictionary should appear in app/data.
-
-- download run_server.sh from this repo (in folder app), save in local folder app, cd into it and run: `source run_server.sh`
-
-- wait a little bit until you see a message something like this:
-
+## To use locally without docker:
+- clone this repo
+- get data and store in directory app/data:
+  - download GoogleNews-vectors-negative300.bin.gz from [here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing) and gunzip.
+  - download glove.6B.zip [here](http://nlp.stanford.edu/data/glove.6B.zip) and unzip.
+- pip install requirements.txt
+- download spacy model with `python -m spacy download en_core_web_md`
+- download WordNet with `python -m nltk.downloader punkt averaged_perceptron_tagger wordnet`
+- cd into app-folder and run `python application.py`
+- wait a little while....
 - open the specified address (should be: http://0.0.0.0:5000/) in your browser and the website should appear (although the initial load could also take some time...)
 
 ## To Do:
