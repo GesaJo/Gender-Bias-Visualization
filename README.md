@@ -1,11 +1,10 @@
 <img style="float:right;" src="app/static/images/logo.png">
 
-## Project to visualize gender-bias in language models
+## Project to visualize gender-bias in language models  
 
-<!--
-link: -->
 
-<!-- (This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.) -->
+[Link to project-website](http://34.71.35.3:5000/)  
+<span style="font-size:10px;"> (This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.)</span>
 
 As has been known for some time, many machine learning models reproduce, and
 sometimes amplify, human biases regarding race, gender, age etc.
@@ -42,7 +41,7 @@ also concentrate on “male” and “female”.
 All of these Tools are explained in more detail on their respective sites.
 
 Models and tech used (among others):
-Word2Vec, GloVe, WordNet, GPT2, python, spacy, scipy, pytorch, bokeh, sklearn, HTML, CSS, jinja.
+Word2Vec, GloVe, WordNet, GPT2, python, spacy, scipy, pytorch, bokeh, sklearn, HTML, CSS, jinja, hosted on GCP.
 
 
 <img src="overview.gif" width="1000"/>
@@ -90,7 +89,7 @@ This project has been developed as final project @Spiced Bootcamp.
 ## To Do:
 -  ~~add more documentation~~
 - ~~dockerize~~
-- host
+- ~~host on GCP~~
 - tests
 - new feature: bias in whole dataset and most biased words
 
