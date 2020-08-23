@@ -104,3 +104,6 @@ This project has been developed as final project @Spiced Bootcamp.
 * Gonen, H./  Goldberg, Y.: Lipstick on a Pig: Debiasing Methods Cover up Systematic Gender Biases in Word Embeddings But do not Remove Them (2019).   
 * Hoyle, A./ Wolf-Sonkin, L./ Wallach, H. / Augenstein, I. / Cotterell, R.: Unsupervised Discovery of Gendered Language through Latent-Variable Modeling (2019).  
 * Zhao, J./ Zhou, Y./ Li, Z. / Wang, W./ Chang, K.W.: Learning Gender-neutral Word Embeddings (2018).
+
+
+MIT License
