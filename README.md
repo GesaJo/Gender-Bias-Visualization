@@ -2,8 +2,7 @@
 
 ## Project to visualize gender-bias in language models  
 
-
-[not deployed right now][Link to project-website](http://34.71.35.3:5000/)
+[Link to project-website](http://34.71.35.3:5000/)
 <span style="font-size:10px;"> (This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.)</span>
 
 As has been known for some time, many machine learning models reproduce, and
@@ -89,7 +88,7 @@ This project has been developed as final project @Spiced Bootcamp.
 ## To Do:
 -  ~~add more documentation~~
 - ~~dockerize~~
-- ~~host on GCP~~ [stopped for now]
+- ~~host on GCP~~ 
 - tests
 - new feature: bias in whole dataset and most biased words
 
