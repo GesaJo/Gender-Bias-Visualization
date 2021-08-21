@@ -2,8 +2,7 @@
 
 ## Project to visualize gender-bias in language models  
 
-[Link to project-website](http://34.71.35.3:5000/)
-<span style="font-size:10px;"> (This website is not optimzed for small screens, so it looks best on a laptop (or bigger) screen.)</span>
+(Currently not deployed)
 
 As has been known for some time, many machine learning models reproduce, and
 sometimes amplify, human biases regarding race, gender, age etc.
