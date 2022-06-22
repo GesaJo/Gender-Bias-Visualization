@@ -23,7 +23,7 @@ MarkupSafe==1.1.1
 mlconjug==3.4.0
 murmurhash==1.0.2
 nltk==3.5
-numpy==1.18.4
+numpy==1.22.0
 packaging==20.4
 pickleshare==0.7.5
 Pillow==7.1.2
