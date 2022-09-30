@@ -18,7 +18,7 @@ importlib-metadata==1.6.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 jmespath==0.10.0
-joblib==0.15.1
+joblib==1.2.0
 MarkupSafe==1.1.1
 mlconjug==3.4.0
 murmurhash==1.0.2
